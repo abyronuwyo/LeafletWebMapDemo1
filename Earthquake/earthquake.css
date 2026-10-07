@@ -7,3 +7,18 @@ html, body, #earthquakemap {
     height: 100%;
     width: 100%;
 }
+
+.legend {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 18px;
+}
+
+.legend h4 {
+    margin: 0 0 5px;
+}
+
+.legend p {
+    margin: 2px;
+}

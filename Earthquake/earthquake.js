@@ -48,3 +48,22 @@ $.getJSON(earthquakeUrl, function(data) {
     }).addTo(map);
 
 });
+
+// add earthquake legend
+var legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function(map) {
+
+    var div = L.DomUtil.create('div', 'legend');
+
+    div.innerHTML =
+        '<h4>Earthquake Magnitude</h4>' +
+        '<p><span style="color:green;">●</span> Less than 1</p>' +
+        '<p><span style="color:yellow;">●</span> 1 - 2.9</p>' +
+        '<p><span style="color:orange;">●</span> 3 - 4.9</p>' +
+        '<p><span style="color:red;">●</span> 5+</p>';
+
+    return div;
+};
+
+legend.addTo(map);
