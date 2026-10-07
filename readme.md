@@ -17,7 +17,7 @@ For the earthquake map I used recent USGS earthquake data to show where earthqua
 View the Earthquake map: 
 <https://abyronuwyo.github.io/LeafletWebMapDemo1/Earthquake/>
 
-## Bonus Map
+### Bonus Map
 
 For the bonus part of the assignment I combined the weather alerts and earthquake data into one map. The layer control can be used to toggle the weather alerts and earthquake data on or off to view them separately or together.
 
