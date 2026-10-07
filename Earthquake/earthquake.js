@@ -15,8 +15,27 @@ $.getJSON(earthquakeUrl, function(data) {
     L.geoJSON(data, {
 
         pointToLayer: function(feature, latlng) {
-            return L.circleMarker(latlng);
-        },
+
+    var magnitude = feature.properties.mag;
+    var markerColor;
+
+    if (magnitude >= 5) {
+        markerColor = 'red';
+    } else if (magnitude >= 3) {
+        markerColor = 'orange';
+    } else if (magnitude >= 1) {
+        markerColor = 'yellow';
+    } else {
+        markerColor = 'green';
+    }
+
+    return L.circleMarker(latlng, {
+        radius: magnitude * 3 + 3,
+        color: markerColor,
+        fillColor: markerColor,
+        fillOpacity: 0.7
+    });
+},
 
         onEachFeature: function(feature, layer) {
             layer.bindPopup(
