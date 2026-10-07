@@ -1,7 +1,8 @@
 var map = L.map('weathermap').setView([38, -95], 4);
-var basemapUrl = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+var basemapUrl = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
 var basemap = L.tileLayer(basemapUrl, {
-    attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+    maxZoom: 17,
+    attribution: 'Map data: &copy; OpenStreetMap contributors, SRTM | Map style: &copy; OpenTopoMap'
 }).addTo(map);
 
 
