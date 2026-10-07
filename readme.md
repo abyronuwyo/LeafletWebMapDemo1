@@ -1,9 +1,18 @@
-# This will be example of Assignment 4
-## Leaflet Web Map
-### Author: Anthoney L Byron
+# Assignment 4: Leaflet Web Map
+## Author: Anthoney L Byron
 
-A map showing real-time weather radar and alerts from the National Weather Service.
+For this assignment I used Leaflet to create two interactive web maps using live weather and earthquake data.
+
+### Weather Map
+
+For the weather map I used real time weather radar along with active National Weather Service alerts. I also changed the alert colors based on the overall severity and used a topographic basemap to make the weather layers easier to see.
+
+View the Weather map:
 <https://abyronuwyo.github.io/LeafletWebMapDemo1/Weather/>
 
-A map showing earthquake data and seismic risk pattern.
+### Earthquake Map
+
+For the earthquake map I used recent USGS earthquake data to show where earthquakes have occurred. The markers can change in color and size based on magnitude and clicking on a marker shows the magnitude, location and time of the earthquake.
+
+View the Earthquake map: 
 <https://abyronuwyo.github.io/LeafletWebMapDemo1/Earthquake/>
