@@ -1,58 +1,21 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Basic map</title>
-    <meta name="viewport" content="width=device-width, 
-    initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Earthquake Map</title>
 
-    <link rel = "stylesheet" href = "leaflet.css">
-
-
-    <script src="leaflet.js"></script>
-
-
-    <!-- More content will go here -->
-     <style>
-        body {
-            padding: 0;
-            margin: 0;
-        }
-        html, body, #map {
-            height: 100%;
-            width: 100%;
-        }
-
-     </style>
+    <link href="../Weather/leaflet.css" rel="stylesheet" />
+    <link href="earthquake.css" rel="stylesheet" />
 </head>
+
 <body>
-    <!-- More content will go here -->
-     <div id = "map"></div>
-     <script>
-        var map = L.map("map", {center: [41.3147, -105.5690], zoom: 17});
-        //Please modify center coordinate if you want to show different area
-        
-        L.tileLayer(
-            "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", 
-            {attribution: '&copy; <a href="http://' + 
-            'www.openstreetmap.org/copyright">OpenStreetMap</a>'}
-        ).addTo(map);
 
-        //add a point marker in the agriculture building at University of Wyoming
+    <div id="earthquakemap"></div>
 
-       // add a marker
-       var pnt = L.marker([41.3142, -105.5808]).addTo(map);
+    <script src="../Weather/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="earthquake.js"></script>
 
-      
-        //add a circlemarker
-        L.circleMarker([41.3142, -105.5808], {radius: 50, color: "black", fillColor: "red"}).addTo(map);
-
-
-        //add a line
-
-
-        //add polygons
-        
-
-     </script>
 </body>
+
 </html>
